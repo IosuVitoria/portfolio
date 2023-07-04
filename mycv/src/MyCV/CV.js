@@ -31,11 +31,12 @@ export const CV = {
       tareas: [
         "Calibración y mantenimiento de equipos para el cumplimiento de la ISO 17025.",
         "Análisis microbiológico y químico de aguas, alimentos y cosméticos. Incluyendo nuevas metodologías PCR.",
-        "Responsable del servicio de calibraciones externas del laboratorio."
+        "Responsable del servicio de calibraciones externas del laboratorio.",
+        "Desarrollo de herramientas microinformáticas para la correcta gestión de las calibraciones y verificaciones del laboratorio."
       ],
       periodo: "LABORATORIOS ARABA (VITORIA) SEP 2018 - ACTUALIDAD"
     },
-    {
+    {  
       puesto: "Técnico certificado de iOS Apple",
       empresa: "IRAXKOR R S . L .",
       tareas: [

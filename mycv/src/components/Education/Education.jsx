@@ -23,7 +23,7 @@ const Formation = () => {
         <div className="competenciasDigitales">
           <h2>Competencias Digitales</h2>
           <ul>
-          <img src={imageA} alt="Competencia Digital" className='imageDecorator'/> {/* Agrega la ruta de la imagen digital */}
+            <img src={imageA} alt="Competencia Digital" className='imageDecorator' /> {/* Agrega la ruta de la imagen digital */}
             {competenciasDigitales.programación.map((programa, index) => (
               <li key={index}>
                 <div className="competencia">
@@ -35,7 +35,7 @@ const Formation = () => {
         </div>
         <div className="competenciasPersonales">
           <h2>Competencias Personales</h2>
-          <img src={imageB} alt="Competencia Personal" className='imageDecorator'/> {/* Agrega la ruta de la imagen personal */}
+          <img src={imageB} alt="Competencia Personal" className='imageDecorator' /> {/* Agrega la ruta de la imagen personal */}
           {Object.values(competenciasPersonales).map((competencia, index) => (
             <div key={index} className="competencia">
               <p>{competencia}</p>
@@ -52,6 +52,7 @@ const Formation = () => {
               <h4>{formacion.titulo}</h4>
               <p>{formacion.institución}</p>
               <p>{formacion.año}</p>
+              <p>{formacion.otros}</p>
             </div>
           ))}
         </div>
@@ -75,11 +76,10 @@ const Formation = () => {
         </div>
       </div>
       <button className="buttonEducation" onClick={() => window.location.href = "/home"}>
-          Volver a Home
+        Volver a Home
       </button>
     </div>
   );
 };
 
 export default Formation;
-
