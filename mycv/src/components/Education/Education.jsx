@@ -3,6 +3,7 @@ import './Education.scss';
 import { CV } from '../../MyCV/CV';
 import imageA from '../../assets/digital.svg';
 import imageB from '../../assets/personal.svg';
+import imageC from '../../assets/educacion2.png'
 
 const { competenciasDigitales, competenciasPersonales, formacionAcademica } = CV;
 
@@ -96,6 +97,7 @@ const Formation = () => {
                   )}
                 </div>
               ))}
+            <img src={imageC} alt="Imagen de código Python" className='imgFormation'/>
             </div>
           )}
         </div>

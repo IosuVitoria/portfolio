@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+
+body {
+  background: url('../../assets/FondoCV.jpg.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rajdhani", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 75vh;
+}
+
+.language-buttons {
+  margin-bottom: 10px;
+
+  button {
+    border: none;
+    background-color: #d9d9d9;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top:10px;
+
+    img {
+      width: 100px;
+      height: 60px;
+    }
+  }
+}
+
+.language-buttons button:focus {
+  outline: none;
+}
+
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 55vh;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.language-buttons button:hover {
+  background-color: #b3b3b3;
+}
+
+.contacto-container:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}

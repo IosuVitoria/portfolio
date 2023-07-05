@@ -17,7 +17,7 @@ export const CV = {
     teléfono: "620829248",
     dirección: "Plaza San Martín de Abendaño, CP: 01009, Vitoria Gásteiz",
     gmail: "iosugvaldecantos",
-    linkedin: "URL de tu perfil de LinkedIn",
+    linkedin: "https://www.linkedin.com/in/iosu-gomez-biologo-analista/",
     "coche propio": "Carnet de coche B1 y coche propio"
   },
   competenciasPersonales: {
@@ -101,9 +101,7 @@ export const CV = {
         "Primeros pasos con el backend: MongoDB y Node.js.",
         "Integrando conceptos y usando frameworks: React.js y Angular.js.",
         "GIT: Control de versiones.",
-        "PHP y Symphony, Frontend y Backend diferentes.",
-        "Metodologías ágiles: Scrum.",
-        "Integración con softskills."
+        "PHP y Symphony, Frontend y Backend diferentes."
       ],
     },
   ]
