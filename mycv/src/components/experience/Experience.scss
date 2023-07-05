@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
 
 .experience-container {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,14 +10,7 @@
   padding: 20px;
   color: white;
   font-family: "Rajdhani", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.job-container {
-  margin-bottom: 30px;
-  background-color: rgba(169, 169, 169, 0.527);
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
-  padding: 20px;
+  height: 75vh;
 }
 
 .job-container h3 {
@@ -37,25 +29,59 @@
   margin-bottom: 0;
 }
 
-img {
-  height: 550px;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
-.buttonEducation {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
+.buttonExperience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 75px;
+  border-radius: 40%;
+  background: linear-gradient(to right, #33333391, #11224093);
   color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: transform 0.3s;
+  text-decoration: none;
 }
 
-.buttonEducation:hover {
+.buttonExperience:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  list-style: none;
+}
+
+.job-details{
+  background: grey;
+  opacity: 0.8;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 60%;
+}
+
+.navigation-button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #333, #112240);
+  color: white;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.active{
+  margin: 10px;
+  padding: 12px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #838080, #3378f3);
+  color: white;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.imgExperience{
+  height: 200px;
 }
