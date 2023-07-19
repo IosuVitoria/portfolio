@@ -1,3 +1,12 @@
+import imageH from "../assets/logoHTML.png";
+import imageC from "../assets/LogoCSS.png";
+import imageJ from "../assets/logoJS.png";
+import imageA from "../assets/logoAngular.png";
+import imageR from "../assets/logoREACT.png";
+import imageN from "../assets/logoNODE.png";
+import imagePHP from "../assets/logoPHP.png";
+import imageM from "../assets/logoMYSQL.png";
+
 export const CV = {
   DatosGenerales: {
     nombre: "Iosu",
@@ -15,8 +24,8 @@ export const CV = {
   },
   Contacto: {
     teléfono: "620829248",
-    dirección: "Plaza San Martín de Abendaño, CP: 01009, Vitoria Gásteiz",
-    gmail: "iosugvaldecantos",
+    dirección: "CP: 01009, Vitoria Gásteiz",
+    gmail: "iosugvaldecantos@gmail.com",
     linkedin: "https://www.linkedin.com/in/iosu-gomez-biologo-analista/",
     "coche propio": "Carnet de coche B1 y coche propio"
   },
@@ -29,7 +38,40 @@ export const CV = {
     competencia6: "Euskera B1"
   },
   competenciasDigitales: {
-    programación: ["HTML", "CSS", "JavaScript - Frameworks usados: React y Angular", "Node y MongoDB", "MYSQL", "PHP"]
+    lenguajes: [
+      {
+        nombre: "HTML",
+        imagen: {imageH},
+      },
+      {
+        nombre: "CSS",
+        imagen: {imageC},
+      },
+      {
+        nombre: "JavaScript",
+        imagen: {imageJ},
+      },
+      {
+        nombre: "REACT.JS",
+        imagen: {imageR},
+      },
+      {
+        nombre: "ANGULAR.JS",
+        imagen: {imageA},
+      },
+      {
+        nombre: "Node y MongoDB",
+        imagen: {imageN},
+      },
+      {
+        nombre: "MYSQL",
+        imagen: {imageM},
+      },
+      {
+        nombre: "PHP",
+        imagen: {imagePHP},
+      }
+    ]
   },
   "Experiencia laboral": [
     {

@@ -1,11 +1,18 @@
+
 import React, { useState, useEffect } from 'react';
 import './Education.scss';
 import { CV } from '../../MyCV/CV';
-import imageA from '../../assets/digital.svg';
-import imageB from '../../assets/personal.svg';
-import imageC from '../../assets/educacion2.png'
+import imageH from "../../assets/logoHTML.png";
+import imageC from "../../assets/LogoCSS.png";
+import imageJ from "../../assets/logoJS.png";
+import imageR from "../../assets/logoREACT.png";
+import imageA from "../../assets/logoAngular.png";
+import imageN from "../../assets/logoNODE.png";
+import imagePHP from "../../assets/logoPHP.png";
+import imageM from "../../assets/logoMYSQL.png";
+import imageE from "../../assets/educacion2.png"
 
-const { competenciasDigitales, competenciasPersonales, formacionAcademica } = CV;
+const { formacionAcademica } = CV;
 
 const Formation = () => {
   const [formacionIndex, setFormacionIndex] = useState(0);
@@ -31,24 +38,16 @@ const Formation = () => {
         <div className="competenciasDigitales">
           <h2>Competencias Digitales</h2>
           <ul>
-            <img src={imageA} alt="Competencia Digital" className="imageDecorator" />
-            {competenciasDigitales.programación.map((programa, index) => (
-              <li key={index}>
-                <div className="competencia">
-                  <span>{programa}</span>
-                </div>
-              </li>
-            ))}
+            <li><img src={imageH} alt="HTML" className="logo" />HTML</li>
+            <li><img src={imageC} alt="CSS" className="logo" />CSS</li>
+            <li><img src={imageJ} alt="JavaScript" className="logo" />JAVASCRIPT</li>
+            <li><img src={imageR} alt="React.js" className="logo" />REACT.JS</li>
+            <li><img src={imageA} alt="Angular.js" className="logo" />ANGULAR.JS</li>
+            <li><img src={imageN} alt="Node.js y MongoDB" className="logo" />NODE.JS Y MONGODB</li>
+            <li><img src={imageM} alt="MySQL" className="logo" />MYSQL</li>
+            <li><img src={imagePHP} alt="PHP" className="logo" />PHP Y SYMFONY</li>
           </ul>
-        </div>
-        <div className="competenciasPersonales">
-          <h2>Competencias Personales</h2>
-          <img src={imageB} alt="Competencia Personal" className="imageDecorator" />
-          {Object.values(competenciasPersonales).map((competencia, index) => (
-            <div key={index} className="competencia">
-              <p>{competencia}</p>
-            </div>
-          ))}
+          <img src={imageE} alt="PHP" className="educacion" />
         </div>
       </div>
       <div className="formacion">
@@ -64,7 +63,7 @@ const Formation = () => {
             className={`navigation-button ${formacionIndex === 1 ? 'active' : ''}`}
             onClick={() => handleFormacionNavigation(1)}
           >
-            Otra Formación
+            Formación Desarrollador Fullstack
           </button>
         </div>
         <div className="formacion-details">
@@ -78,7 +77,7 @@ const Formation = () => {
                   <p>{formacion.otros}</p>
                 </div>
               ))}
-            <img src="https://th.bing.com/th/id/OIP.RvoJgtcfnpeKE_G8sPzAfAHaE8?pid=ImgDet&rs=1" alt="Imagen de código Python" className='imgFormation'/>
+              <img src="https://sydweb.neocities.org/biologia/1.jpg" alt="Imagen de código Python" className='imgFormation' />
             </div>
           )}
           {formacionIndex === 1 && (
@@ -97,14 +96,16 @@ const Formation = () => {
                   )}
                 </div>
               ))}
-            <img src={imageC} alt="Imagen de código Python" className='imgFormation'/>
+              <img src="https://th.bing.com/th/id/OIP.RvoJgtcfnpeKE_G8sPzAfAHaE8?pid=ImgDet&rs=1" alt="Imagen de código Python" className='imgFormation' />
             </div>
           )}
         </div>
       </div>
-      <button className="buttonEducation" onClick={() => (window.location.href = "/home")}>
-        Volver a Home
-      </button>
+      <div className="buttonContainer"> {/* Agregamos un contenedor para centrar el botón */}
+        <button className="buttonEducation" onClick={() => (window.location.href = "/home")}>
+          Volver a Home
+        </button>
+      </div>
     </div>
   );
 };

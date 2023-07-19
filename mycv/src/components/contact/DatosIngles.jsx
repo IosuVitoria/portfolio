@@ -9,11 +9,12 @@ const DatosIngles = () => {
   return (
     <div>
       <h2>General Information:</h2>
-      <strong><p>Name: {name} {last_name}</p></strong>
+      <strong><p>{name} {last_name}</p></strong>
       <strong><p>{career}</p></strong>
       <p>Interests: {interests}</p>
       <h2>Contact Information:</h2>
       <p>Address: {Contacto.dirección}</p>
+      <p><strong>{Contacto.teléfono}</strong></p>
       <strong><p>
         Email: <a href={`mailto:${Contacto.gmail}`}>{Contacto.gmail}</a>
       </p></strong>

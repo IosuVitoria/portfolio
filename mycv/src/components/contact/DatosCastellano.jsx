@@ -8,11 +8,12 @@ const DatosCastellano = () => {
   return (
     <div>
       <h2>Datos Generales:</h2>
-      <p>Nombre: {nombre} {apellidos}</p>
+      <p><strong>{nombre} {apellidos}</strong></p>
       <strong><p>{carrera}</p></strong>
       <p>Intereses: {intereses}</p>
       <h2>Contacto:</h2>
       <p>Dirección: {Contacto.dirección}</p>
+      <p><strong>{Contacto.teléfono}</strong></p>
       <strong><p>
         Correo electrónico: <a href={`mailto:${Contacto.gmail}`}>{Contacto.gmail}</a>
       </p></strong>

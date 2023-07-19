@@ -9,6 +9,7 @@ import {Route, Routes} from "react-router-dom";
 import Footer from './components/shared/footer/Footer';
 import Formation from './components/Education/Education';
 
+
 function App() {
   return (
     <div className="App">
